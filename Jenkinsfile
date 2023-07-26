@@ -6,7 +6,7 @@ pipeline {
   stages {
     stage("Deploy site") {
       steps {
-        sh 'cp server/src'
+        sh 'cp index.jsp webapp/src/main/webapp'
       }
     }
     stage("Run HawkScan Test") {
